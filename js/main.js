@@ -68,3 +68,7 @@
     
 
 })(jQuery);
+
+// setp registration
+
+
