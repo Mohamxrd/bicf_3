@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Progressive Form | Multi Steps Form</title>
+	<title>Créer un compte</title>
 	<link rel="stylesheet" type="text/css" href="css/step.css">
+   
+    
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 <body>
@@ -31,6 +33,12 @@
                     <p>4</p>
                 </div>
             </li>
+            <li class="form_5_progessbar">
+                <div>
+                  <p>5</p>
+                </div>
+              </li>
+              
 		</ul>
 	</div>
 	<div class="form_wrap">
@@ -187,47 +195,214 @@
 			</form>
 		</div>
 		<div class="form_3 data_info" style="display: none;">
-			<h2>Professional Info</h2>
+			<h2>Type de compte</h2>
 			<form>
 				<div class="form_container">
-					<div class="input_wrap">
-						<label for="company">Current Company</label>
-						<input type="text" name="Current Company" class="input" id="company">
-					</div>
-					<div class="input_wrap">
-						<label for="experience">Total Experience</label>
-						<input type="text" name="Total Experience" class="input" id="experience">
-					</div>
-					<div class="input_wrap">
-						<label for="designation">Designation</label>
-						<input type="text" name="Designation" class="input" id="designation">
-					</div>
+                    <div class="input_wrap">
+                        <label for="account_type">Type d'acteur</label>
+                        <select name="account_type" id="account_type" class="input" >
+                            <option selected value="option1">Demander</option>
+                            <option value="option2">Fournisseur</option>
+                            <option value="option3">Livreur</option>
+                            <option value="option4">investisseur</option>
+                            <option value="option5">Agent</option>
+                        </select>
+                    </div>
+                    <div class="input_wrap" id="actor_type_input">
+                        <label for="actor_type">Status acteur</label>
+                        <select name="actor_type" id="actor_type" class="input" >
+                            <option selected value="option1">Facbrican</option>
+                            <option value="option2">Producteur</option>
+                            <option value="option3">Importateur</option>
+                            <option value="option4">Grossiste</option>
+                            <option value="option5">Semi-grossiste</option>
+                            <option value="option6">Detaillant</option>
+                        </select>
+                    </div>
+                    <div class="input_wrap" id="detailant_options" style="display: none;">
+                        <label for="detailant_options">Options pour Detaillant</label>
+                        <select name="detailant_options" id="detailant_options_select" class="input">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                        </select>
+                    </div>
+                    <div class="input_wrap" id="actor_type_input2">
+                        <label for="actor_type2">Status acteur</label>
+                        <select name="actor_type2" id="actor_type2" class="input" >
+                            <option selected value="option1">Importateur</option>
+                            <option value="option2">Grossiste</option>
+                            <option value="option3">Semi-grossiste</option>
+                            <option value="option4">Detaillant</option>
+                            
+                        </select>
+                    </div>
+                    <div class="input_wrap" id="actor_budg_input">
+                        <label for="actor_budg">Budget (Fcfa)</label>
+                        <select name="actor_budg" id="actor_bidg" class="input" >
+                            <option selected value="option1">10 000 - 100 000</option>
+                            <option value="option2">101 000 - 1 000 000</option>
+                            <option value="option3">1 001 000 - 10 000 000</option>
+                            <option value="option4">10 001 000 - 100 000 000</option>
+                            <option value="option5">100 001 000 - 1 Milliard</option>
+                            <option value="option6">1 Milliard et plus</option>
+                            
+                        </select>
+                    </div>
+                    <div class="input_wrap" id="agent_account_input">
+                        <label for="agent_account">Type d'Agent</label>
+                        <select name="agent_account" id="agent_account" class="input" >
+                            <option selected value="option1">Commercial</option>
+                            <option value="option2">Superviseur principale</option>
+                            <option value="option3">Superviseur generale</option>
+                            <option value="option4">Fondé de pouvoir</option>
+                            <option value="option5">Super adminitrateur</option>
+                           
+                            
+                        </select>
+                    </div>
+                   
+					
 				</div>
 			</form>
 		</div>
-        <!-- ... (votre code existant) ... -->
+        
 
 <div class="form_4 data_info" style="display: none;">
-    <h2>Other Info</h2>
+    <h2>Secteur d'activité</h2>
     <form>
         <div class="form_container">
-            <div class="input_wrap">
-                <label for="field1">Field 1</label>
-                <input type="text" name="Field 1" class="input" id="field1">
+            <div class="input_wrap" id="sector_activity_selector">
+                <label for="sector_activity">Choisissez votre secteur d'activité</label>
+                <select name="sector_activity" id="sector_activity" class="input">
+                    <option selected value="option1">Industrie</option>
+                    <option value="option2">Construction</option>
+                    <option value="option3">Commerce</option>
+                    <option value="option4">Service</option>
+                    
+                </select>
             </div>
-            <div class="input_wrap">
-                <label for="field2">Field 2</label>
-                <input type="text" name="Field 2" class="input" id="field2">
+            
+            <div class="input_wrap" id="industry_selector">
+                <label for="industry">Choisissez votre industrie</label>
+                <select name="industry" id="industry" class="input">
+                    <option selected value="option1">Alimentaires</option>
+        <option value="option2">Boissons</option>
+        <option value="option3">Tabac</option>
+        <option value="option4">Bois</option>
+        <option value="option5">Papier</option>
+        <option value="option6">Imprimerie</option>
+        <option value="option7">Chimique</option>
+        <option value="option8">Pharmaceutique</option>
+        <option value="option9">Caoutchouc et plastique</option>
+        <option value="option10">Produits non métalliques</option>
+        <option value="option11">Métallurgie et produits métalliques</option>
+        <option value="option12">Machines et équipements</option>
+        <option value="option13">Matériels de transport</option>
+        <option value="option14">Réparation et installation de machines et d'équipements</option>
+        <option value="option15">Distribution d'électricité</option>
+        <option value="option16">Distribution de gaz</option>
+                </select>
             </div>
-            <div class="input_wrap">
-                <label for="field3">Field 3</label>
-                <input type="text" name="Field 3" class="input" id="field3">
+            
+            
+            <div class="input_wrap" id="building_type_input">
+                <label for="building_type">Choisissez le type de bâtiment</label>
+                <select name="building_type" id="building_type" class="input">
+                    <option selected value="option1">Habitation</option>
+                    <option value="option2">Usine</option>
+                    <option value="option3">Pont & Chaussée</option>
+                </select>
             </div>
+
+            <div class="input_wrap" id="commerce_sector_selector">
+                <label for="commerce_sector">Choisissez votre secteur d'activité</label>
+                <select name="commerce_sector" id="commerce_sector" class="input">
+                    <option selected value="option1">Commerce</option>
+                    <option value="option2">Réparation d'automobiles et de motocycles</option>
+                </select>
+            </div>
+
+            <div class="input_wrap" id="transport_sector_selector">
+                <label for="transport_sector">Choisissez votre secteur d'activité</label>
+                <select name="transport_sector" id="transport_sector" class="input">
+                    <option selected value="option1">Transports et entreposage</option>
+                    <option value="option2">Hébergement et restauration</option>
+                    <option value="option3">Activités financières et d'assurance</option>
+                    <option value="option4">Activités immobilières</option>
+                    <option value="option5">Service juridiques</option>
+                    <option value="option6">Service comptables</option>
+                    <option value="option7">Service de gestion</option>
+                    <option value="option8">Service d'architecture</option>
+                    <option value="option9">Service d'ingénierie</option>
+                    <option value="option10">Service de contrôle et d'analyses techniques</option>
+                    <option value="option11">Autres activités spécialisées, scientifiques et techniques</option>
+                    <option value="option12">Services administratifs</option>
+                    <option value="option13">Service de soutien</option>
+                    <option value="option14">Administration publique</option>
+                    <option value="option15">Enseignement</option>
+                    <option value="option16">Service santé humaine</option>
+                    <option value="option17">Arts, spectacles et activités récréatives</option>
+                    <option value="option18">Autres activités de services</option>
+                </select>
+            </div>
+            
+            
+            
+            
         </div>
     </form>
 </div>
 
-<!-- ... (votre code existant) ... -->
+<div class="form_5 data_info" style="display: none;">
+    <h2>Contact</h2>
+    <form>
+      <div class="form_container">
+        <div class="input_wrap" id="country_selector">
+            <label for="country">Choisissez un pays</label>
+            <select name="country" id="country" class="input">
+                <!-- Les options seront ajoutées dynamiquement via JavaScript -->
+            </select>
+        </div>
+        <div class="input_wrap" style="width: 500px;
+        max-width: 100%;
+        margin: 0 auto 20px;">
+            <label for="phone">Téléphone</label>
+            <div>
+                
+                <input type="tel" name="phone" class="input" id="phone" placeholder="Numéro de téléphone">
+            </div>
+        </div>
+        <div class="input_wrap">
+            <label for="text">Localité</label>
+            <input type="text" name="password" class="input" id="password">
+        </div>
+        <div class="input_wrap">
+            <label for="confirm_password">Adress geographique</label>
+            <input type="text" name="confirm password" class="input" id="confirm_password">
+        </div>
+        <div class="input_wrap">
+            <label for="confirm_password">Email</label>
+            <input type="password" name="confirm password" class="input" id="confirm_password">
+        </div>
+        <div class="input_wrap">
+            <label for="proximity">Zone d'activité</label>
+            <select name="proximity" id="proximity" class="input">
+                <option selected value="option1">Proximité</option>
+                <option value="option2">Locale</option>
+                <option value="option3">Nationale</option>
+                <option value="option4">Sous Régionale</option>
+                <option value="option5">Continentale</option>
+                <option value="option6">Internationale</option>
+                <option value="option7">Mondiale</option>
+            </select>
+        </div>
+        
+      </div>
+    </form>
+  </div>
+  
+
+
 
 	</div>
 	<div class="btns_wrap">
@@ -245,8 +420,13 @@
 		</div>
 		<div class="common_btns form_4_btns" style="display: none;">
 			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Retour</button>
+			<button type="button" class="btn_next">Suivant <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+		</div>
+        <div class="common_btns form_5_btns" style="display: none;">
+			<button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Retour</button>
 			<button type="button" class="btn_done">Terminer</button>
 		</div>
+
 	</div>
 </div>
 
@@ -259,6 +439,7 @@
 </div>
 
 <script type="text/javascript" src="/js/setp.js"></script>
+
 
 </body>
 </html>
