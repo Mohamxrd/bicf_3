@@ -1,117 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>BICF</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
+
+
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+
+	<link href="/css/nucleo-icons.css" rel="stylesheet" />
+	<link href="/css/nucleo-svg.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+	<script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+
 </head>
-<body style="background-color: #666666;">
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<div class="login100-more" style="background-image: url('images/bg-02.jpg');">
+
+<body>
+
+	<body class="">
+
+		<main class="main-content  mt-0">
+			<section>
+				<div class="page-header min-vh-75">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-4 col-lg-5 col-md-6 d-flex flex-column mx-auto">
+								<div class="card card-plain mt-8">
+									<div class="card-header pb-0 text-left bg-transparent">
+										<h3 class="font-weight-bolder text-info text-gradient">BICF</h3>
+										<p class="mb-0">Entrez votre nom d'utlisateur et votre mot de passe pour vous
+											connecter</p>
+									</div>
+									<div class="card-body">
+										<form role="form">
+											<label>Nom d'utlisateur</label>
+											<div class="mb-3">
+												<input type="email" class="form-control" placeholder="Nom d'utlisateur"
+													aria-label="Email" aria-describedby="email-addon">
+											</div>
+											<label>Mot de passe</label>
+											<div class="mb-3">
+												<input type="password" class="form-control" placeholder="Mot de passe"
+													aria-label="Password" aria-describedby="password-addon">
+											</div>
+
+											<div class="form-check form-switch ">
+												<input class="form-check-input" type="checkbox" id="rememberMe"
+													checked="">
+												<label class="form-check-label" for="rememberMe">Remember me</label>
+											</div>
+											<div class="text-center">
+												<button type="button" class="btn bg-gradient-info w-100 mt-4 mb-0">Sign
+													in</button>
+											</div>
+										</form>
+									</div>
+
+									<div class="card-footer text-center ">
+										<p class="text-sm mx-auto m-0">
+											Mot de passe oublié ?
+											<a href="javascript:;"
+												class="text-info text-gradient font-weight-bold ">Cliquez ici</a>
+										</p>
+										<p class="mb-4 text-sm mx-auto m-0">
+											Vouys n'avez pas de compte ?
+											<a href="register.html"
+												class="text-info text-gradient font-weight-bold">Créer un compte</a>
+										</p>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="oblique position-absolute top-0 h-100 d-md-block d-none me-n8">
+									<div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6"
+										style="background-image:url('/images/bg-02.jpg')"></div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-43">
-						BICF
-					</span>
-					
-					<label for="">Nom d'utlisateur</label>
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						
-						<input class="input100" type="text" name="email" placeholder="Nom d'utlisateur">
-						<span class="focus-input100"></span>
-				
-					</div>
-					
-					<label for="">Mot de passe</label>
-					<div class="wrap-input100 validate-input" data-validate="Password is required" >
-						<input class="input100" type="password" name="pass" placeholder="Mot de passe">
-						<span class="focus-input100"></span>
-						
-					</div>
-
-					<div class="flex-sb-m w-full p-t-3 p-b-32">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Se souvenir de moi
-							</label>
-						</div>
-
-						<div>
-							<a href="#" class="txt1">
-								Mot de passe oublié?
-							</a>
-						</div>
-					</div>
-			
-
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Se connecter
-						</button>
-					</div>
-					
-					<div class="text-center p-t-46 p-b-20">
-						
-						<span class="txt2">
-							Vous n'avez pas de compte ?
-						</span>
-						<a href="register.html">Créer un compte</a>
+			</section>
+		</main>
+		<!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+		<footer class="footer py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 mb-4 mx-auto text-center">
+						<a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
+							Compagnie
+						</a>
+						<a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
+							A propos
+						</a>
+						<a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
+							Team
+						</a>
+						<a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
+							Produits
+						</a>
+						<a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
+							Blog
+						</a>
+						<a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
+							Prix
+						</a>
 					</div>
 
-					
-				</form>
+				</div>
 
-				
 			</div>
-		</div>
-	</div>
-	
-	
+		</footer>
 
-	
-	
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
 
-</body>
+
+
+
+
+		<script src="/js/core/popper.min.js"></script>
+		<script src="/js/core/bootstrap.min.js"></script>
+		<script src="/js/plugins/perfect-scrollbar.min.js"></script>
+		<script src="/js/plugins/smooth-scrollbar.min.js"></script>
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+		<script src="/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
+
+	</body>
+
 </html>

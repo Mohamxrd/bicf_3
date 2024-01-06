@@ -25,7 +25,32 @@ body{
 	font-size: 16px;
 	position: relative;
 }
+a {
 
+	font-size: 14px;
+	line-height: 1.7;
+	color: var(--primary);
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+  color:  var(--next-btn-hover);
+}
+.text-center{
+    margin-top: 30px;
+    text-align: center;
+}
 .wrapper{
 	width: 750px;
 	max-width: 100%;
@@ -231,7 +256,7 @@ body{
 	margin-right: 20px;
 	width: 50px;
 	height: 50px;
-	background: var(--primary);
+	background: rgb(112, 232, 112);
 	color: var(--white);
 	border-radius: 50%;
 	display: flex;
@@ -259,3 +284,9 @@ body{
 .form_4_btns {
     display: none;
 }
+.txt2 {
+   
+    font-size: 14px;
+    line-height: 1.4;
+    color: #999999;
+  }
