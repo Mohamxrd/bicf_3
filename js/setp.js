@@ -31,94 +31,94 @@ var modal_wrapper = document.querySelector(".modal_wrapper");
 var shadow = document.querySelector(".shadow");
 
 form_1_next_btn.addEventListener("click", function () {
-  form_1.style.display = "none";
-  form_2.style.display = "block";
+    form_1.style.display = "none";
+    form_2.style.display = "block";
 
-  form_1_btns.style.display = "none";
-  form_2_btns.style.display = "flex";
+    form_1_btns.style.display = "none";
+    form_2_btns.style.display = "flex";
 
-  form_2_progessbar.classList.add("active");
+    form_2_progessbar.classList.add("active");
 });
 
 form_2_back_btn.addEventListener("click", function () {
-  form_1.style.display = "block";
-  form_2.style.display = "none";
+    form_1.style.display = "block";
+    form_2.style.display = "none";
 
-  form_1_btns.style.display = "flex";
-  form_2_btns.style.display = "none";
+    form_1_btns.style.display = "flex";
+    form_2_btns.style.display = "none";
 
-  form_2_progessbar.classList.remove("active");
+    form_2_progessbar.classList.remove("active");
 });
 
 form_2_next_btn.addEventListener("click", function () {
-  form_2.style.display = "none";
-  form_3.style.display = "block";
+    form_2.style.display = "none";
+    form_3.style.display = "block";
 
-  form_3_btns.style.display = "flex";
-  form_2_btns.style.display = "none";
+    form_3_btns.style.display = "flex";
+    form_2_btns.style.display = "none";
 
-  form_3_progessbar.classList.add("active");
+    form_3_progessbar.classList.add("active");
 });
 
 form_3_back_btn.addEventListener("click", function () {
-  form_2.style.display = "block";
-  form_3.style.display = "none";
+    form_2.style.display = "block";
+    form_3.style.display = "none";
 
-  form_3_btns.style.display = "none";
-  form_2_btns.style.display = "flex";
+    form_3_btns.style.display = "none";
+    form_2_btns.style.display = "flex";
 
-  form_3_progessbar.classList.remove("active");
+    form_3_progessbar.classList.remove("active");
 });
 
 form_3_next_btn.addEventListener("click", function () {
-  form_3.style.display = "none";
-  form_4.style.display = "block";
+    form_3.style.display = "none";
+    form_4.style.display = "block";
 
-  form_4_btns.style.display = "flex";
-  form_3_btns.style.display = "none";
+    form_4_btns.style.display = "flex";
+    form_3_btns.style.display = "none";
 
-  form_4_progessbar.classList.add("active");
+    form_4_progessbar.classList.add("active");
 });
 
 form_4_back_btn.addEventListener("click", function () {
-  form_3.style.display = "block";
-  form_4.style.display = "none";
+    form_3.style.display = "block";
+    form_4.style.display = "none";
 
-  form_4_btns.style.display = "none";
-  form_3_btns.style.display = "flex";
+    form_4_btns.style.display = "none";
+    form_3_btns.style.display = "flex";
 
-  form_4_progessbar.classList.remove("active");
+    form_4_progessbar.classList.remove("active");
 });
 
 form_4_next_btn.addEventListener("click", function () {
-  form_4.style.display = "none";
-  form_5.style.display = "block";
+    form_4.style.display = "none";
+    form_5.style.display = "block";
 
-  form_4_btns.style.display = "none";
-  form_5_btns.style.display = "flex";
+    form_4_btns.style.display = "none";
+    form_5_btns.style.display = "flex";
 
-  form_5_progessbar.classList.add("active");
+    form_5_progessbar.classList.add("active");
 });
 
 form_5_back_btn.addEventListener("click", function () {
-  form_5.style.display = "none";
-  form_4.style.display = "block";
+    form_5.style.display = "none";
+    form_4.style.display = "block";
 
-  form_5_btns.style.display = "none";
-  form_4_btns.style.display = "flex";
+    form_5_btns.style.display = "none";
+    form_4_btns.style.display = "flex";
 
-  form_5_progessbar.classList.remove("active");
+    form_5_progessbar.classList.remove("active");
 });
 
 btn_done.addEventListener("click", function () {
-  modal_wrapper.classList.add("active");
-  setTimeout(() => {
-    window.location.href = "index.html";
-  }, 500);
+    modal_wrapper.classList.add("active");
+    setTimeout(() => {
+        window.location.href = "../../index.html";
+    }, 500);
 });
 
 shadow.addEventListener("click", function () {
-  modal_wrapper.classList.remove("active");
+    modal_wrapper.classList.remove("active");
 });
 
 /// partie selectionner de input
@@ -136,132 +136,132 @@ const userMena1 = document.getElementById("user_mena1_input");
 const userMena2 = document.getElementById("user_mena2_input");
 
 function showInputFields1(
-  sexe,
-  age,
-  status,
-  compSize,
-  serv,
-  orgtyp1,
-  orgtyp2,
-  com,
-  mena1,
-  mena2
+    sexe,
+    age,
+    status,
+    compSize,
+    serv,
+    orgtyp1,
+    orgtyp2,
+    com,
+    mena1,
+    mena2
 ) {
-  userSexeInput.style.display = sexe;
-  userAgeInput.style.display = age;
-  userStatus.style.display = status;
-  userCompSizeInput.style.display = compSize;
-  userServInput.style.display = serv;
-  userOrgtyp1.style.display = orgtyp1;
-  userOrgtyp2.style.display = orgtyp2;
-  userCom.style.display = com;
-  userMena1.style.display = mena1;
-  userMena2.style.display = mena2;
+    userSexeInput.style.display = sexe;
+    userAgeInput.style.display = age;
+    userStatus.style.display = status;
+    userCompSizeInput.style.display = compSize;
+    userServInput.style.display = serv;
+    userOrgtyp1.style.display = orgtyp1;
+    userOrgtyp2.style.display = orgtyp2;
+    userCom.style.display = com;
+    userMena1.style.display = mena1;
+    userMena2.style.display = mena2;
 }
 
 showInputFields1(
-  "block",
-  "block",
-  "block",
-  "none",
-  "none",
-  "none",
-  "none",
-  "none",
-  "none"
+    "block",
+    "block",
+    "block",
+    "none",
+    "none",
+    "none",
+    "none",
+    "none",
+    "none"
 );
 
 userTypeSelect.addEventListener("change", (event) => {
-  const selectedOption = event.target.value;
+    const selectedOption = event.target.value;
 
-  switch (selectedOption) {
-    case "option1":
-      showInputFields1(
-        "block",
-        "block",
-        "block",
-        "none",
-        "none",
-        "none",
-        "none",
-        "none",
-        "none",
-        "none"
-      );
-      break;
-    case "option2":
-      showInputFields1(
-        "none",
-        "none",
-        "none",
-        "block",
-        "none",
-        "none",
-        "none",
-        "none",
-        "none",
-        "none"
-      );
-      break;
-    case "option3":
-      showInputFields1(
-        "none",
-        "none",
-        "none",
-        "none",
-        "block",
-        "none",
-        "none",
-        "none",
-        "none",
-        "none"
-      );
-      break;
-    case "option4":
-      showInputFields1(
-        "none",
-        "none",
-        "none",
-        "none",
-        "none",
-        "block",
-        "block",
-        "none",
-        "none",
-        "none"
-      );
-      break;
-    case "option5":
-      showInputFields1(
-        "none",
-        "none",
-        "none",
-        "none",
-        "none",
-        "none",
-        "none",
-        "block",
-        "none",
-        "none"
-      );
-      break;
-    case "option6":
-      showInputFields1(
-        "none",
-        "none",
-        "none",
-        "none",
-        "none",
-        "none",
-        "none",
-        "none",
-        "block",
-        "block"
-      );
-      break;
-    default:
-    // Gérer d'autres options au besoin
-  }
+    switch (selectedOption) {
+        case "option1":
+            showInputFields1(
+                "block",
+                "block",
+                "block",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            );
+            break;
+        case "option2":
+            showInputFields1(
+                "none",
+                "none",
+                "none",
+                "block",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            );
+            break;
+        case "option3":
+            showInputFields1(
+                "none",
+                "none",
+                "none",
+                "none",
+                "block",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            );
+            break;
+        case "option4":
+            showInputFields1(
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "block",
+                "block",
+                "none",
+                "none",
+                "none"
+            );
+            break;
+        case "option5":
+            showInputFields1(
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "block",
+                "none",
+                "none"
+            );
+            break;
+        case "option6":
+            showInputFields1(
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "block",
+                "block"
+            );
+            break;
+        default:
+        // Gérer d'autres options au besoin
+    }
 });
 
 const accountType = document.getElementById("account_type");
@@ -273,56 +273,56 @@ const agentAccount = document.getElementById("agent_account_input");
 const detailantOptions = document.getElementById("detailant_options");
 
 function showInputFields2(actor, actor2, actorBudg, agent) {
-  actorTypeInput.style.display = actor;
-  actorType2.style.display = actor2;
-  actorBudginput.style.display = actorBudg;
-  agentAccount.style.display = agent;
+    actorTypeInput.style.display = actor;
+    actorType2.style.display = actor2;
+    actorBudginput.style.display = actorBudg;
+    agentAccount.style.display = agent;
 }
 
 showInputFields2("none", "none", "none", "none", "none");
 
 accountType.addEventListener("change", (event) => {
-  const selectedOption = event.target.value;
+    const selectedOption = event.target.value;
 
-  // Afficher ou masquer les éléments en fonction de la valeur sélectionnée
-  switch (selectedOption) {
-    case "option1":
-      showInputFields2("none", "none", "none", "none");
-      break;
-    case "option2":
-      showInputFields2("block", "none", "none", "none");
-      break;
-    case "option3":
-      showInputFields2("none", "block", "none", "none");
-      break;
-    case "option4":
-      showInputFields2("none", "none", "block", "none");
-      break;
-    case "option5":
-      showInputFields2("none", "none", "none", "block");
-      break;
-    default:
-  }
+    // Afficher ou masquer les éléments en fonction de la valeur sélectionnée
+    switch (selectedOption) {
+        case "option1":
+            showInputFields2("none", "none", "none", "none");
+            break;
+        case "option2":
+            showInputFields2("block", "none", "none", "none");
+            break;
+        case "option3":
+            showInputFields2("none", "block", "none", "none");
+            break;
+        case "option4":
+            showInputFields2("none", "none", "block", "none");
+            break;
+        case "option5":
+            showInputFields2("none", "none", "none", "block");
+            break;
+        default:
+    }
 
-  // Gérer l'affichage de detailantOptions en fonction de actor_type
+    // Gérer l'affichage de detailantOptions en fonction de actor_type
 });
 
 // Écoute de l'événement de changement de actor_type
 
 const sectorActivitySelector = document.getElementById(
-  "sector_activity_selector"
+    "sector_activity_selector"
 );
 const industrySelector = document.getElementById("industry_selector");
 const buildingTypeInput = document.getElementById("building_type_input");
 const commerceSectorSelector = document.getElementById(
-  "commerce_sector_selector"
+    "commerce_sector_selector"
 );
 const transportSectorSelector = document.getElementById(
-  "transport_sector_selector"
+    "transport_sector_selector"
 );
 
 function showInputFields(selector, displayValue) {
-  selector.style.display = displayValue;
+    selector.style.display = displayValue;
 }
 
 showInputFields(industrySelector, "block");
@@ -331,78 +331,79 @@ showInputFields(commerceSectorSelector, "none");
 showInputFields(transportSectorSelector, "none");
 
 sectorActivitySelector.addEventListener("change", (event) => {
-  const selectedOption = event.target.value;
+    const selectedOption = event.target.value;
 
-  // Hide all selectors initially
-  showInputFields(industrySelector, "none");
-  showInputFields(buildingTypeInput, "none");
-  showInputFields(commerceSectorSelector, "none");
-  showInputFields(transportSectorSelector, "none");
+    // Hide all selectors initially
+    showInputFields(industrySelector, "none");
+    showInputFields(buildingTypeInput, "none");
+    showInputFields(commerceSectorSelector, "none");
+    showInputFields(transportSectorSelector, "none");
 
-  // Show the relevant selector based on the selected option
-  switch (selectedOption) {
-    case "option1":
-      showInputFields(industrySelector, "block");
-      break;
-    case "option2":
-      showInputFields(buildingTypeInput, "block");
-      break;
-    case "option3":
-      showInputFields(commerceSectorSelector, "block");
-      break;
-    case "option4":
-      showInputFields(transportSectorSelector, "block");
-      break;
-    default:
-    // Do nothing for other options
-  }
+    // Show the relevant selector based on the selected option
+    switch (selectedOption) {
+        case "option1":
+            showInputFields(industrySelector, "block");
+            break;
+        case "option2":
+            showInputFields(buildingTypeInput, "block");
+            break;
+        case "option3":
+            showInputFields(commerceSectorSelector, "block");
+            break;
+        case "option4":
+            showInputFields(transportSectorSelector, "block");
+            break;
+        default:
+
+        // Do nothing for other options
+    }
 });
 
 fetch("https://restcountries.com/v3.1/all")
-  .then((response) => response.json())
-  .then((data) => {
-    const countryDropdown = document.getElementById("country");
-
-    // Ajouter la Côte d'Ivoire en tant que première option
-    const optionIvoryCoast = document.createElement("option");
-    optionIvoryCoast.value = "option1";
-    optionIvoryCoast.textContent = "Côte d'Ivoire";
-    countryDropdown.appendChild(optionIvoryCoast);
-
-    // Ajouter les autres pays
-    data.forEach((country, index) => {
-      const option = document.createElement("option");
-      option.value = "option" + (index + 2);
-      option.textContent = country.name.common;
-      countryDropdown.appendChild(option);
-    });
-  })
-  .catch((error) =>
-    console.error("Erreur lors de la récupération des pays", error)
-  );
-
-function populateCountryDropdown() {
-  const countryDropdown = document.getElementById("country_code");
-  fetch("https://restcountries.com/v2/all")
     .then((response) => response.json())
     .then((data) => {
-      data.forEach((country) => {
-        if (
-          country.hasOwnProperty("callingCodes") &&
-          country.callingCodes.length > 0
-        ) {
-          const countryCode = country.callingCodes[0];
-          const countryName = country.name;
-          const option = document.createElement("option");
-          option.value = countryCode;
-          option.textContent = `${countryName} (+${countryCode})`;
-          countryDropdown.appendChild(option);
-        }
-      });
+        const countryDropdown = document.getElementById("country");
+
+        // Ajouter la Côte d'Ivoire en tant que première option
+        const optionIvoryCoast = document.createElement("option");
+        optionIvoryCoast.value = "option1";
+        optionIvoryCoast.textContent = "Côte d'Ivoire";
+        countryDropdown.appendChild(optionIvoryCoast);
+
+        // Ajouter les autres pays
+        data.forEach((country, index) => {
+            const option = document.createElement("option");
+            option.value = "option" + (index + 2);
+            option.textContent = country.name.common;
+            countryDropdown.appendChild(option);
+        });
     })
     .catch((error) =>
-      console.error("Erreur lors de la récupération des pays", error)
+        console.error("Erreur lors de la récupération des pays", error)
     );
+
+function populateCountryDropdown() {
+    const countryDropdown = document.getElementById("country_code");
+    fetch("https://restcountries.com/v2/all")
+        .then((response) => response.json())
+        .then((data) => {
+            data.forEach((country) => {
+                if (
+                    country.hasOwnProperty("callingCodes") &&
+                    country.callingCodes.length > 0
+                ) {
+                    const countryCode = country.callingCodes[0];
+                    const countryName = country.name;
+                    const option = document.createElement("option");
+                    option.value = countryCode;
+                    option.textContent = `${countryName} (+${countryCode})`;
+                    countryDropdown.appendChild(option);
+                }
+            });
+        })
+        .catch((error) =>
+            console.error("Erreur lors de la récupération des pays", error)
+        );
 }
 
 populateCountryDropdown();
