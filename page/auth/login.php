@@ -65,7 +65,7 @@
 										</p>
 										<p class="mb-4 text-sm mx-auto m-0">
 											Vouys n'avez pas de compte ?
-											<a href="register.html"
+											<a href="register.php"
 												class="text-info text-gradient font-weight-bold">Créer un compte</a>
 										</p>
 									</div>
@@ -75,7 +75,7 @@
 							<div class="col-md-6">
 								<div class="oblique position-absolute top-0 h-100 d-md-block d-none me-n8">
 									<div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6"
-										style="background-image:url('/images/bg-02.jpg')"></div>
+										style="background-image:url('../../images/bg-02.jpg')"></div>
 								</div>
 							</div>
 						</div>

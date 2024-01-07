@@ -30,6 +30,16 @@ var btn_done = document.querySelector(".btn_done");
 var modal_wrapper = document.querySelector(".modal_wrapper");
 var shadow = document.querySelector(".shadow");
 
+function btnSuivantClick(){
+    if(document.getElementById("error-msg")){
+        form_1_btns.disabled = true;
+
+    }else{
+        form_1_btns.disabled = false;
+    }
+
+}
+
 form_1_next_btn.addEventListener("click", function () {
     form_1.style.display = "none";
     form_2.style.display = "block";
@@ -110,12 +120,13 @@ form_5_back_btn.addEventListener("click", function () {
     form_5_progessbar.classList.remove("active");
 });
 
-btn_done.addEventListener("click", function () {
-    modal_wrapper.classList.add("active");
-    setTimeout(() => {
-        window.location.href = "../../index.html";
-    }, 500);
-});
+
+
+
+// btn_done.addEventListener("click", function () {
+//     modal_wrapper.classList.add("active");
+   
+// });
 
 shadow.addEventListener("click", function () {
     modal_wrapper.classList.remove("active");

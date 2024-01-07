@@ -26699,3 +26699,43 @@
   }
   
   /*# sourceMappingURL=dashboard-free.css.map */
+.container_admin{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+.container_admin .content{
+  text-align: center;
+}
+.container_admin .content h3{
+  font-size: 30px;
+}
+.container_admin .content h3 span{
+  background-color: crimson;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+.container_admin .content h1{
+  font-size: 50px;
+}
+.container_admin .content h1 span{
+  color: crimson;
+
+}
+.container_admin .content .btn{
+  background-color: #393939;
+  color: #fff;
+  margin: 0 5px;
+  
+}
+.error-msg{
+  margin: 10px 0;
+  color: crimson;
+  font-size: 20px;
+}
+
+  
